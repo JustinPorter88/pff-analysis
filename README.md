@@ -7,6 +7,9 @@ To Do:
 3. Write tests to verify that code behaves as expected.
 2. Refactor GUI code so that there is a clear API that one can use if they do want to use the GUI. 
 
+There is now a clear function that can be used in `pff_function.m`, but this is not the cleanest. 
+Run the file `tests/test_pff_function.m` to verify that you get the expected results with this function.
+
 ## Usage 
 
 1. Clone the repository to your local directory. 

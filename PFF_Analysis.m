@@ -167,10 +167,13 @@ else
   xlabel('Amplitude');
   ylabel('Damping Ratio, %');
   subplot(133)
+  plot(PFFtimevec,PFFxvec,'-');
+  hold on;
   plot(Time,Amp,'.');
   xlabel('Time');
   ylabel('Amplitude');
-  set(gcf,'Position',[325 450 1200 420])
+  ylim([-1.5*max(Amp), 1.5*max(Amp)])
+  set(gcf,'Position',[50 50 1200 420])
 end
 
 

@@ -13,5 +13,8 @@ else
   PFFdata = x - mean(x(end-100:end)) ;
 end
 idx = find(abs(PFFdata)>0.5*max(abs(PFFdata))) ;
+if idx(1) == 1
+    idx(1) = 2; % just start at beginning of data and don't hit an error next.
+end
 PFFtime = t - t(idx(1)-1) ;
 end

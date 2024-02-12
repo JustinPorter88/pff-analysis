@@ -11,7 +11,8 @@ function [Amp, Freq, Damp, Time] = pff_function(t, x, params)
 %       .band - (full) bandwidth of filter in units of frequency (Hz)
 %       .order - order of butterworth filter to use
 %       .tlast - final time to cut off in analysis (only signal before this
-%                time is used).
+%                time is used). This must be less than the total time or
+%                the function will hit an error.
 %
 % Outputs:
 %   Amp - amplitude of response vector (after filtering) at discrete points

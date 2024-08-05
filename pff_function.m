@@ -13,6 +13,8 @@ function [Amp, Freq, Damp, Time] = pff_function(t, x, params)
 %       .tlast - final time to cut off in analysis (only signal before this
 %                time is used). This must be less than the total time or
 %                the function will hit an error.
+%                This is probably the time after the estimated impact, not
+%                the total time passed into the function.
 %
 % Outputs:
 %   Amp - amplitude of response vector (after filtering) at discrete points

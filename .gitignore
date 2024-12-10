@@ -18,3 +18,4 @@
 *-blx.bib
 *.run.xml
 *.nlo
+__pycache__

@@ -37,3 +37,23 @@ Run the file `tests/test_pff_function.m` to verify that you get the expected res
 
 1. Write additional verification tests
 2. Clean-up code
+
+## Python
+
+A partial python implementation is included for convenience.
+The python implementation currently lacks the extrapolation step before filtering, so will have more end effects.
+
+### Verification
+
+Run the script `tests/test_pff_py.py` to see plotted results calculated with the python script versus the saved MATLAB reference.
+
+### Usage
+
+See test above for an example.
+```
+import pff
+from pff import pff_analysis, plot_pff_results
+
+# call pff_analysis function here.
+```
+
